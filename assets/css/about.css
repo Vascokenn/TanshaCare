@@ -1,0 +1,292 @@
+/* ========================================
+   ABOUT SECTION STYLES - SIMPLIFIED
+======================================== */
+
+#about {
+    background-color: var(--light-gray);
+}
+
+.section-title {
+    font-size: var(--fs-4xl);
+    font-weight: var(--fw-bold);
+    color: var(--black);
+    margin-bottom: var(--spacing-md);
+}
+
+.section-subtitle {
+    font-size: var(--fs-lg);
+    color: var(--dark-gray);
+}
+
+/* Story Section */
+.story-title {
+    font-size: var(--fs-3xl);
+    font-weight: var(--fw-bold);
+    color: var(--black);
+}
+
+.story-text {
+    font-size: var(--fs-lg);
+    line-height: 1.7;
+    color: var(--dark-gray);
+    margin-bottom: var(--spacing-lg);
+}
+
+.highlight-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    margin-bottom: var(--spacing-md);
+}
+
+.highlight-item i {
+    font-size: var(--fs-xl);
+}
+
+.image-placeholder {
+    background: var(--white);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-3xl);
+    text-align: center;
+    box-shadow: var(--shadow-md);
+}
+
+.image-placeholder i {
+    font-size: 4rem;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+}
+
+/* Mission Cards */
+.mission-section {
+    background: var(--white);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-2xl);
+    box-shadow: var(--shadow-md);
+}
+
+.value-card {
+    text-align: center;
+    padding: var(--spacing-xl);
+}
+
+.value-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto var(--spacing-lg);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.value-icon i {
+    font-size: var(--fs-2xl);
+    color: var(--white);
+}
+
+/* Team Cards */
+.team-title {
+    font-size: var(--fs-3xl);
+    font-weight: var(--fw-bold);
+    color: var(--black);
+}
+
+.team-card {
+    background: var(--white);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+    height: 100%;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    transition: all 0.3s ease;
+}
+
+.team-image {
+    padding: var(--spacing-xl) var(--spacing-xl) 0;
+}
+
+.team-image .image-placeholder {
+    background: var(--light-gray);
+    padding: var(--spacing-2xl);
+    margin-bottom: 0;
+}
+
+.team-image .image-placeholder i {
+    font-size: 3rem;
+    color: var(--medium-gray);
+    margin: 0;
+}
+
+.team-info {
+    padding: var(--spacing-md) var(--spacing-xl) var(--spacing-xl);
+    text-align: center;
+}
+
+.team-name {
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-bold);
+    color: var(--black);
+    margin-bottom: var(--spacing-xs);
+}
+
+.team-role {
+    color: var(--primary-color);
+    font-weight: var(--fw-semibold);
+    margin-bottom: var(--spacing-xs);
+}
+
+.team-credentials {
+    font-size: var(--fs-sm);
+    color: var(--dark-gray);
+    margin-bottom: var(--spacing-md);
+}
+
+.specialty-tag {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: var(--spacing-xs) var(--spacing-md);
+    border-radius: var(--radius-full);
+    font-size: var(--fs-xs);
+    font-weight: var(--fw-semibold);
+    margin: 2px;
+    display: inline-block;
+}
+
+/* Certifications */
+.certifications-section {
+    background: var(--white);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-2xl);
+    box-shadow: var(--shadow-md);
+    margin-top: var(--spacing-2xl);
+}
+
+.cert-title {
+    font-size: var(--fs-3xl);
+    font-weight: var(--fw-bold);
+    color: var(--black);
+}
+
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+}
+
+.cert-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-lg);
+    background: var(--light-gray);
+    border-radius: var(--radius-lg);
+    border-left: 4px solid var(--primary-color);
+}
+
+.cert-icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cert-icon i {
+    font-size: var(--fs-lg);
+    color: var(--white);
+}
+
+.cert-info h6 {
+    font-weight: var(--fw-bold);
+    color: var(--black);
+    margin-bottom: var(--spacing-xs);
+}
+
+.cert-info small {
+    color: var(--dark-gray);
+    font-size: var(--fs-sm);
+}
+
+/* Community Section */
+.community-section {
+    background: var(--white);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-2xl);
+    box-shadow: var(--shadow-md);
+}
+
+.community-title {
+    font-size: var(--fs-3xl);
+    font-weight: var(--fw-bold);
+    color: var(--black);
+}
+
+.community-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-lg);
+    background: var(--light-gray);
+    border-radius: var(--radius-lg);
+    height: 100%;
+}
+
+.community-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.community-icon i {
+    font-size: var(--fs-xl);
+    color: var(--white);
+}
+
+.community-content h5 {
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-bold);
+    color: var(--black);
+    margin-bottom: var(--spacing-sm);
+}
+
+.community-content p {
+    color: var(--dark-gray);
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 767px) {
+    .certifications-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .community-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .mission-section,
+    .certifications-section,
+    .community-section {
+        padding: var(--spacing-xl);
+    }
+}

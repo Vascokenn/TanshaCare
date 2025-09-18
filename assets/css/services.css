@@ -1,0 +1,570 @@
+/* ========================================
+   SERVICES SECTION STYLES
+======================================== */
+
+/* Services Section Base */
+.services-section {
+    background: linear-gradient(135deg, var(--light-gray) 0%, #ffffff 50%, var(--light-gray) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.services-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(37,99,235,0.02)"/><circle cx="75" cy="75" r="1" fill="rgba(16,185,129,0.02)"/><circle cx="50" cy="10" r="0.5" fill="rgba(37,99,235,0.01)"/><circle cx="10" cy="60" r="0.5" fill="rgba(16,185,129,0.01)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.services-section > .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Section Header */
+.section-badge {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 0.5rem 1.25rem;
+    border-radius: 50px;
+    font-weight: var(--fw-semibold);
+    color: var(--darker-gray);
+    margin-bottom: 1.5rem;
+    border: 2px solid rgba(16, 185, 129, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow-sm);
+}
+
+.section-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: var(--fw-bold);
+    margin-bottom: 1.5rem;
+    color: var(--black);
+}
+
+.section-description {
+    font-size: 1.125rem;
+    color: var(--dark-gray);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Service Cards */
+.service-card {
+    background: var(--white);
+    border-radius: var(--radius-xl);
+    padding: 2rem;
+    border: 1px solid var(--medium-gray);
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-normal);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    transform: scaleX(0);
+    transition: transform var(--transition-normal);
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+    border-color: rgba(37, 99, 235, 0.2);
+}
+
+.service-card:hover::before {
+    transform: scaleX(1);
+}
+
+/* Service Icon */
+.service-icon {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-xl);
+    transition: all var(--transition-normal);
+}
+
+.service-icon i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    z-index: 2;
+    position: relative;
+    transition: all var(--transition-normal);
+}
+
+.icon-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(16, 185, 129, 0.1));
+    border-radius: var(--radius-xl);
+    transition: all var(--transition-normal);
+}
+
+.service-card:hover .service-icon {
+    transform: scale(1.1);
+}
+
+.service-card:hover .service-icon i {
+    color: var(--white);
+}
+
+.service-card:hover .icon-bg {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    transform: rotate(5deg);
+}
+
+/* Service Content */
+.service-content {
+    text-align: center;
+}
+
+.service-title {
+    font-size: 1.5rem;
+    font-weight: var(--fw-bold);
+    color: var(--black);
+    margin-bottom: 1rem;
+}
+
+.service-description {
+    color: var(--dark-gray);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+/* Service Features */
+.service-features {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+    text-align: left;
+}
+
+.service-features li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    color: var(--darker-gray);
+    font-size: 0.95rem;
+}
+
+.service-features li i {
+    margin-right: 0.75rem;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+/* Service Action */
+.service-action {
+    margin-top: 2rem;
+}
+
+.service-action .btn {
+    padding: 0.75rem 1.5rem;
+    font-weight: var(--fw-semibold);
+    border-radius: var(--radius-lg);
+    transition: all var(--transition-normal);
+    min-width: 180px;
+}
+
+/* Service Badges */
+.service-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--accent-color);
+    color: var(--white);
+    padding: 0.25rem 0.75rem;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: var(--fw-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.service-badge.seasonal {
+    background: var(--secondary-color);
+}
+
+/* Service Filters */
+.service-filters {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--medium-gray);
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background: var(--light-gray);
+    border: 2px solid transparent;
+    color: var(--darker-gray);
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius-lg);
+    font-weight: var(--fw-semibold);
+    transition: all var(--transition-normal);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--primary-color);
+    color: var(--white);
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.filter-btn i {
+    font-size: 1rem;
+}
+
+/* Emergency Notice */
+.emergency-notice {
+    background: linear-gradient(135deg, #fee2e2, #fef2f2);
+    border: 2px solid var(--accent-color);
+    border-radius: var(--radius-xl);
+    padding: 2rem;
+    box-shadow: var(--shadow-md);
+}
+
+.emergency-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.emergency-icon {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+.emergency-text {
+    flex-grow: 1;
+}
+
+.emergency-text h5 {
+    margin: 0 0 0.5rem 0;
+    color: var(--black);
+    font-weight: var(--fw-bold);
+}
+
+.emergency-text p {
+    margin: 0;
+    color: var(--dark-gray);
+}
+
+.emergency-action {
+    flex-shrink: 0;
+}
+
+/* Insurance Information */
+.insurance-info {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--medium-gray);
+}
+
+.insurance-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.insurance-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--darker-gray);
+    font-weight: var(--fw-medium);
+    font-size: 0.9rem;
+}
+
+.insurance-item i {
+    font-size: 1.5rem;
+}
+
+/* Animations */
+@keyframes serviceCardEntrance {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.service-card {
+    animation: serviceCardEntrance 0.6s ease-out;
+}
+
+/* Filter Animation */
+.service-card.filtered-out {
+    opacity: 0.3;
+    transform: scale(0.95);
+    pointer-events: none;
+}
+
+.service-card.filtered-in {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+======================================== */
+
+/* Mobile Devices */
+@media (max-width: 767.98px) {
+    .service-card {
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .service-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 1.5rem;
+    }
+    
+    .service-icon i {
+        font-size: 2rem;
+    }
+    
+    .service-title {
+        font-size: 1.25rem;
+    }
+    
+    .service-description {
+        font-size: 0.95rem;
+    }
+    
+    .service-features {
+        margin: 1rem 0;
+    }
+    
+    .service-features li {
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .service-action .btn {
+        width: 100%;
+        min-width: auto;
+    }
+    
+    .filter-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .filter-btn {
+        width: 100%;
+        max-width: 250px;
+        justify-content: center;
+    }
+    
+    .emergency-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+    
+    .emergency-text {
+        order: 1;
+    }
+    
+    .emergency-icon {
+        order: 2;
+    }
+    
+    .emergency-action {
+        order: 3;
+    }
+    
+    .insurance-logos {
+        gap: 1rem;
+    }
+    
+    .insurance-item {
+        font-size: 0.8rem;
+    }
+    
+    .insurance-item i {
+        font-size: 1.2rem;
+    }
+}
+
+/* Tablet Devices */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .service-card {
+        padding: 1.75rem;
+    }
+    
+    .emergency-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+    
+    .filter-buttons {
+        gap: 0.75rem;
+    }
+    
+    .filter-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Large Screens */
+@media (min-width: 1200px) {
+    .service-card {
+        padding: 2.5rem;
+    }
+    
+    .service-icon {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .service-icon i {
+        font-size: 3rem;
+    }
+    
+    .service-title {
+        font-size: 1.75rem;
+    }
+    
+    .service-description {
+        font-size: 1.1rem;
+    }
+}
+
+/* Service Card Hover States for Different Categories */
+.service-card[data-category="prescription"]:hover .icon-bg {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+}
+
+.service-card[data-category="consultation"]:hover .icon-bg {
+    background: linear-gradient(135deg, var(--secondary-color), #06d6a0);
+}
+
+.service-card[data-category="delivery"]:hover .icon-bg {
+    background: linear-gradient(135deg, var(--accent-color), #f59e0b);
+}
+
+.service-card[data-category="vaccination"]:hover .icon-bg {
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+}
+
+.service-card[data-category="screening"]:hover .icon-bg {
+    background: linear-gradient(135deg, #8b5cf6, #a855f7);
+}
+
+.service-card[data-category="supplies"]:hover .icon-bg {
+    background: linear-gradient(135deg, #ef4444, #f87171);
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    .service-card,
+    .service-icon,
+    .filter-btn {
+        transition: none;
+    }
+    
+    .service-card:hover {
+        transform: none;
+    }
+    
+    .service-card:hover .service-icon {
+        transform: none;
+    }
+    
+    .service-card:hover .icon-bg {
+        transform: none;
+    }
+}
+
+/* High Contrast */
+@media (prefers-contrast: high) {
+    .service-card {
+        border: 2px solid var(--darker-gray);
+    }
+    
+    .service-badge {
+        border: 1px solid var(--white);
+    }
+    
+    .emergency-notice {
+        border: 3px solid var(--accent-color);
+    }
+}
+
+/* Print Styles */
+@media print {
+    .services-section {
+        background: white;
+    }
+    
+    .service-card {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid var(--darker-gray);
+    }
+    
+    .service-filters,
+    .emergency-notice {
+        display: none;
+    }
+}

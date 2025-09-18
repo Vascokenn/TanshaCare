@@ -1,0 +1,320 @@
+/* ========================================
+   CONTACT SECTION STYLES - SIMPLE & CLEAN
+======================================== */
+
+#contact {
+    background-color: var(--white);
+}
+
+.section-title {
+    font-size: var(--fs-4xl);
+    font-weight: var(--fw-bold);
+    color: var(--black);
+}
+
+.section-subtitle {
+    font-size: var(--fs-lg);
+    color: var(--dark-gray);
+}
+
+/* Contact Info Section */
+.contact-info {
+    background: var(--light-gray);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-2xl);
+    height: 100%;
+}
+
+.contact-info-title {
+    font-size: var(--fs-2xl);
+    font-weight: var(--fw-bold);
+    color: var(--black);
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.contact-icon i {
+    font-size: var(--fs-lg);
+    color: var(--white);
+}
+
+.contact-details h6 {
+    font-weight: var(--fw-bold);
+    color: var(--black);
+    margin-bottom: var(--spacing-xs);
+}
+
+.contact-details p,
+.contact-details a {
+    color: var(--dark-gray);
+    margin-bottom: 0;
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    color: var(--primary-color);
+}
+
+/* Business Hours */
+.contact-hours h6 {
+    font-weight: var(--fw-bold);
+    color: var(--black);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: var(--spacing-sm);
+}
+
+.hours-list {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+}
+
+.hour-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-sm) 0;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.hour-item:last-child {
+    border-bottom: none;
+}
+
+.day {
+    font-weight: var(--fw-semibold);
+    color: var(--black);
+}
+
+.time {
+    color: var(--primary-color);
+    font-weight: var(--fw-semibold);
+}
+
+.emergency-info {
+    margin-top: var(--spacing-lg);
+}
+
+.emergency-info .alert {
+    background: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: var(--radius-lg);
+}
+
+.emergency-info a {
+    color: var(--white);
+    font-weight: var(--fw-bold);
+    text-decoration: underline;
+}
+
+/* Contact Form */
+.contact-form-container {
+    background: var(--light-gray);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-2xl);
+}
+
+.form-title {
+    font-size: var(--fs-2xl);
+    font-weight: var(--fw-bold);
+    color: var(--black);
+}
+
+.form-label {
+    font-weight: var(--fw-semibold);
+    color: var(--black);
+    margin-bottom: var(--spacing-sm);
+}
+
+.form-control,
+.form-select {
+    border: 2px solid var(--medium-gray);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-md);
+    font-size: var(--fs-base);
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.form-control.is-invalid,
+.form-select.is-invalid {
+    border-color: var(--error-color);
+}
+
+.form-control.is-valid,
+.form-select.is-valid {
+    border-color: var(--success-color);
+}
+
+.invalid-feedback {
+    color: var(--error-color);
+    font-size: var(--fs-sm);
+    margin-top: var(--spacing-xs);
+}
+
+.form-check-input:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.form-check-label {
+    font-size: var(--fs-sm);
+    color: var(--dark-gray);
+}
+
+.form-check-label a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.form-check-label a:hover {
+    text-decoration: underline;
+}
+
+/* Submit Button */
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border: none;
+    border-radius: var(--radius-md);
+    padding: var(--spacing-md) var(--spacing-xl);
+    font-weight: var(--fw-semibold);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(13, 110, 253, 0.3);
+}
+
+.btn-primary:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+/* Form Messages */
+.form-message {
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    font-weight: var(--fw-semibold);
+    text-align: center;
+}
+
+.form-message.success {
+    background: rgba(25, 135, 84, 0.1);
+    color: var(--success-color);
+    border: 1px solid var(--success-color);
+}
+
+.form-message.error {
+    background: rgba(220, 53, 69, 0.1);
+    color: var(--error-color);
+    border: 1px solid var(--error-color);
+}
+
+/* Map Section */
+.map-container {
+    margin-top: var(--spacing-2xl);
+}
+
+.map-title {
+    font-size: var(--fs-2xl);
+    font-weight: var(--fw-bold);
+    color: var(--black);
+    text-align: center;
+}
+
+.map-placeholder {
+    background: var(--light-gray);
+    border-radius: var(--radius-xl);
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed var(--medium-gray);
+    position: relative;
+    overflow: hidden;
+}
+
+.map-placeholder iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    border: 0;
+    border-radius: 12px;
+    display: block;
+}
+
+.map-content {
+    text-align: center;
+    color: var(--dark-gray);
+}
+
+.map-content i {
+    font-size: 4rem;
+    margin-bottom: var(--spacing-lg);
+}
+
+.map-content h5 {
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-bold);
+    color: var(--black);
+    margin-bottom: var(--spacing-sm);
+}
+
+.map-content p {
+    color: var(--dark-gray);
+    margin-bottom: var(--spacing-lg);
+}
+
+/* Mobile Responsive */
+@media (max-width: 767px) {
+    .contact-info,
+    .contact-form-container {
+        padding: var(--spacing-xl);
+        margin-bottom: var(--spacing-xl);
+    }
+    
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--spacing-sm);
+    }
+    
+    .hour-item {
+        flex-direction: column;
+        gap: var(--spacing-xs);
+        text-align: center;
+    }
+    
+    .map-placeholder {
+        height: 220px;
+        min-height: 180px;
+        padding: 0;
+    }
+    .map-placeholder iframe {
+        height: 100%;
+        min-height: 180px;
+    }
+}

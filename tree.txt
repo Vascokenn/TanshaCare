@@ -1,0 +1,40 @@
+.
+├── assets
+│   ├── css
+│   │   ├── about.css
+│   │   ├── animations.css
+│   │   ├── contact.css
+│   │   ├── footer.css
+│   │   ├── header.css
+│   │   ├── hero.css
+│   │   ├── main.css
+│   │   └── services.css
+│   ├── images
+│   │   ├── about
+│   │   ├── hero
+│   │   ├── icons
+│   │   └── services
+│   ├── js
+│   │   ├── about.js
+│   │   ├── animations.js
+│   │   ├── contact.js
+│   │   ├── header.js
+│   │   ├── hero.js
+│   │   ├── main.js
+│   │   └── services.js
+│   └── vendor
+│       ├── bootstrap
+│       └── fontawesome
+├── components
+│   ├── about.html
+│   ├── contact.html
+│   ├── footer.html
+│   ├── header.html
+│   ├── hero.html
+│   └── services.html
+├── index.html
+├── README.md
+├── tracker.md
+└── tree.txt
+
+13 directories, 25 files
